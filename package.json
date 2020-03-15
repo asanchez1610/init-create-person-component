@@ -1,0 +1,25 @@
+{
+  "name": "create-component",
+  "version": "0.0.0",
+  "description": "Webcomponent create-component following open-wc recommendations",
+  "author": "create-component",
+  "license": "MIT",
+  "main": "index.js",
+  "module": "index.js",
+  "scripts": {
+    "start": "es-dev-server --app-index demo/index.html --node-resolve --open --watch",
+    "storybook": "start-storybook --node-resolve --watch --open",
+    "storybook:build": "build-storybook"
+  },
+  "dependencies": {
+    "@ui5/webcomponents": "^1.0.0-rc.5",
+    "@ui5/webcomponents-fiori": "^1.0.0-rc.5",
+    "@ui5/webcomponents-icons": "^1.0.0-rc.5",
+    "lit-html": "^1.1.2",
+    "lit-element": "^2.2.1"
+  },
+  "devDependencies": {
+    "es-dev-server": "^1.23.0",
+    "@open-wc/demoing-storybook": "^1.0.1"
+  }
+}

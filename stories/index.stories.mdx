@@ -1,0 +1,48 @@
+import { Story, Preview, Meta, Props, html } from '@open-wc/demoing-storybook';
+
+import '../create-component.js';
+
+<Meta
+  title="CreateComponent"
+  parameters={{
+    component: "create-component",
+    options: { selectedPanel: "storybookjs/knobs/panel" }
+  }}
+/>
+
+# CreateComponent
+
+A component for...
+
+## Features:
+
+- a
+- b
+- ...
+
+## How to use
+
+### Installation
+
+```bash
+yarn add create-component
+```
+
+```js
+import 'create-component/create-component.js';
+```
+
+<Preview withToolbar>
+  <Story name="Simple">
+    {html`
+      <create-component></create-component>
+    `}
+  </Story>
+</Preview>
+
+## API
+
+<Props of="create-component" />
+
+## Variations
+
